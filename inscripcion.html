@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Institucion</title>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
+	<script src="js/modernizr.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+  
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://media.istockphoto.com/id/1458353392/es/vector/hermoso-resplandor-de-la-ma%C3%B1ana-degradado-cielo-azul-y-nubes-ilustraci%C3%B3n-fondo.jpg?s=612x612&w=0&k=20&c=ERggoBC4OweEy8458MG6GL89cSZNEloyDOS50KDBclQ=');
+    background-size: cover;
+    background-position: center;
+  }
+
+  form {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+
+  input[type="button"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  input[type="button"]:hover {
+    background-color: #45a049;
+  }
+div {
+background-color: #89c99c;
+border: 1px solid #529455;
+padding: 10px;
+width: 500px;
+text-align: center;
+font-size: 18px;
+color: #333;
+margin: 10px;
+}
+</style>
+<body>
+	<!--======================================== Boton ir arriba ========================================-->
+	<i class="btn-up fa fa-arrow-circle-o-up hidden-xs"></i>
+	<!--======================================== Navegación ========================================-->
+	<header class="full-reset header">
+		<!--======================================== Logo(Nombre INS) ========================================-->
+		<div class="full-reset logo">
+			<span class="hidden-lg hidden-md"></span>
+			<span class="hidden-xs hidden-sm"><img src="img/aca.png">Academia Yachaywasi</span>
+		</div>
+		<!--======================================== Links de navegación ========================================-->
+		<nav class="full-reset navigation">
+			<ul class="full-reset list-unstyled">
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="institucion.html">Acerca de</a></li>
+				<li><a href="secretaria.html">servicios</a></li>
+				<li><a href="https://wa.me/+51978321143?text=HolaNecesito%20InformacionSobre%20los%20Ciclos">contacto</a></li>
+				<li><a href="galeria.html">Ciclos</a></li>
+        <li><a href="inscripcion.html">Inscripcion</a></li>
+      </ul>
+		</nav>
+	</header>
+
+<body>
+    <center>
+<div>
+  <h1>Formulario de Inscripción para el concurso de BECAS</h1>
+</div>
+<div>
+
+
+  <form action="procesar_inscripcion.php" method="POST">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono" required>
+
+    <label for="curso">Areas:</label>
+    <select id="curso" name="curso">
+      <option value="curso1">Area I</option>
+      <option value="curso2">Area II</option>
+      <option value="curso3">Area III</option>
+      <option value="curso3">Area IV</option>
+    </select>
+    <input type="button" value="Enviar" class="btn" onclick="redireccion()">
+</div></center>
+    <script>
+      function redireccion(){
+        location.href="exitoinscrip.html"
+      }
+    </script>
+  </form>
+</body>
+</html>
